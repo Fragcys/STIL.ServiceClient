@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The modtager type class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/commontypes")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/commontypes")]
 public class ModtagerType
 {
     /// <summary>
@@ -24,7 +24,7 @@ public class ModtagerType
     /// <summary>
     /// Gets or sets the <see cref="ModtagerSystemId"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string ModtagerSystemId
     {
         get => modtagerSystemIdField;
@@ -34,7 +34,7 @@ public class ModtagerType
     /// <summary>
     /// Gets or sets the <see cref="ModtagerSystemTransaktionsID"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string ModtagerSystemTransaktionsID
     {
         get => modtagerSystemTransaktionsIDField;

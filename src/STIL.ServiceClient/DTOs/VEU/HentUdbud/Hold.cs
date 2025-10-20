@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The hold class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class Hold
 {
     /// <summary>
@@ -219,7 +219,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="AktiGuid"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string AktiGuid
     {
         get => aktiGuidField;
@@ -229,7 +229,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Startdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 1)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 1)]
     public DateTime Startdato
     {
         get => startdatoField;
@@ -239,7 +239,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Slutdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 2)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 2)]
     public DateTime Slutdato
     {
         get => slutdatoField;
@@ -249,7 +249,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="KortBetegnelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public string KortBetegnelse
     {
         get => kortBetegnelseField;
@@ -259,7 +259,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Betegnelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public string Betegnelse
     {
         get => betegnelseField;
@@ -269,7 +269,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Beskrivelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+    [System.Xml.Serialization.XmlElement(Order = 5)]
     public string Beskrivelse
     {
         get => beskrivelseField;
@@ -279,7 +279,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="UGNavn"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
+    [System.Xml.Serialization.XmlElement(Order = 6)]
     public string UGNavn
     {
         get => uGNavnField;
@@ -289,7 +289,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="AntalPladser"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
+    [System.Xml.Serialization.XmlElement(Order = 7)]
     public decimal AntalPladser
     {
         get => antalPladserField;
@@ -299,7 +299,7 @@ public class Hold
     /// <summary>
     /// Gets or sets a value indicating whether the <see cref="AntalPladserSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool AntalPladserSpecified
     {
         get => antalPladserFieldSpecified;
@@ -309,7 +309,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="ElevLektioner"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
+    [System.Xml.Serialization.XmlElement(Order = 8)]
     public decimal ElevLektioner
     {
         get => elevLektionerField;
@@ -319,7 +319,7 @@ public class Hold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="ElevLektionerSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool ElevLektionerSpecified
     {
         get => elevLektionerFieldSpecified;
@@ -329,7 +329,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Aflyst"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 9)]
+    [System.Xml.Serialization.XmlElement(Order = 9)]
     public enumJN Aflyst
     {
         get => aflystField;
@@ -339,7 +339,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="AflystPrdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 10)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 10)]
     public DateTime AflystPrdato
     {
         get => aflystPrdatoField;
@@ -349,7 +349,7 @@ public class Hold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="AflystPrdatoSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool AflystPrdatoSpecified
     {
         get => aflystPrdatoFieldSpecified;
@@ -359,7 +359,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Undervisningstid"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 11)]
+    [System.Xml.Serialization.XmlElement(Order = 11)]
     public string Undervisningstid
     {
         get => undervisningstidField;
@@ -369,7 +369,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Undervisningsform"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 12)]
+    [System.Xml.Serialization.XmlElement(Order = 12)]
     public UndervisningsformType Undervisningsform
     {
         get => undervisningsformField;
@@ -379,7 +379,7 @@ public class Hold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="UndervisningsformSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool UndervisningsformSpecified
     {
         get => undervisningsformFieldSpecified;
@@ -389,7 +389,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Tilmeldingsfrist"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 13)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 13)]
     public DateTime Tilmeldingsfrist
     {
         get => tilmeldingsfristField;
@@ -399,7 +399,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Indberetningsprincip"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 14)]
+    [System.Xml.Serialization.XmlElement(Order = 14)]
     public IndberetningsprincipType Indberetningsprincip
     {
         get => indberetningsprincipField;
@@ -409,7 +409,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Last"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 15)]
+    [System.Xml.Serialization.XmlElement(Order = 15)]
     public enumJN Last
     {
         get => lastField;
@@ -419,7 +419,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Forudsaetninger"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 16)]
+    [System.Xml.Serialization.XmlElement(Order = 16)]
     public string Forudsaetninger
     {
         get => forudsaetningerField;
@@ -429,7 +429,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Kviknr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 17)]
+    [System.Xml.Serialization.XmlElement(Order = 17)]
     public string Kviknr
     {
         get => kviknrField;
@@ -439,7 +439,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Kontaktperson"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 18)]
+    [System.Xml.Serialization.XmlElement(Order = 18)]
     public string Kontaktperson
     {
         get => kontaktpersonField;
@@ -449,7 +449,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="KontaktTelefonnr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 19)]
+    [System.Xml.Serialization.XmlElement(Order = 19)]
     public string KontaktTelefonnr
     {
         get => kontaktTelefonnrField;
@@ -459,7 +459,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Email"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 20)]
+    [System.Xml.Serialization.XmlElement(Order = 20)]
     public string Email
     {
         get => emailField;
@@ -469,7 +469,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Hjemmeside"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 21)]
+    [System.Xml.Serialization.XmlElement(Order = 21)]
     public string Hjemmeside
     {
         get => hjemmesideField;
@@ -479,7 +479,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Aktivitetsafdeling"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 22)]
+    [System.Xml.Serialization.XmlElement(Order = 22)]
     public string Aktivitetsafdeling
     {
         get => aktivitetsafdelingField;
@@ -489,7 +489,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Projektomrade"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 23)]
+    [System.Xml.Serialization.XmlElement(Order = 23)]
     public string Projektomrade
     {
         get => projektomradeField;
@@ -499,7 +499,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Ansvarsomrade"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 24)]
+    [System.Xml.Serialization.XmlElement(Order = 24)]
     public string Ansvarsomrade
     {
         get => ansvarsomradeField;
@@ -509,7 +509,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="MinimumAntalTilmeldte"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 25)]
+    [System.Xml.Serialization.XmlElement(Order = 25)]
     public decimal MinimumAntalTilmeldte
     {
         get => minimumAntalTilmeldteField;
@@ -519,7 +519,7 @@ public class Hold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="MinimumAntalTilmeldteSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool MinimumAntalTilmeldteSpecified
     {
         get => minimumAntalTilmeldteFieldSpecified;
@@ -529,7 +529,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Kontraktuddannelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 26)]
+    [System.Xml.Serialization.XmlElement(Order = 26)]
     public enumJN Kontraktuddannelse
     {
         get => kontraktuddannelseField;
@@ -539,7 +539,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="GarantiKursus"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 27)]
+    [System.Xml.Serialization.XmlElement(Order = 27)]
     public enumJN GarantiKursus
     {
         get => garantiKursusField;
@@ -549,7 +549,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="DeltagerPrisBeloeb"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 28)]
+    [System.Xml.Serialization.XmlElement(Order = 28)]
     public decimal DeltagerPrisBeloeb
     {
         get => deltagerPrisBeloebField;
@@ -559,7 +559,7 @@ public class Hold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="DeltagerPrisBeloebSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool DeltagerPrisBeloebSpecified
     {
         get => deltagerPrisBeloebFieldSpecified;
@@ -569,7 +569,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Skole"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 29)]
+    [System.Xml.Serialization.XmlElement(Order = 29)]
     public skoleType Skole
     {
         get => skoleField;
@@ -579,7 +579,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Lokation"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 30)]
+    [System.Xml.Serialization.XmlElement(Order = 30)]
     public lokationType Lokation
     {
         get => lokationField;
@@ -589,7 +589,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="Uddannelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 31)]
+    [System.Xml.Serialization.XmlElement(Order = 31)]
     public uddannelseType Uddannelse
     {
         get => uddannelseField;
@@ -599,7 +599,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="HoldPladsListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute("HoldPladsListe", Order = 32)]
+    [System.Xml.Serialization.XmlElement("HoldPladsListe", Order = 32)]
     public holdPladsType[] HoldPladsListe
     {
         get => holdPladsListeField;
@@ -609,7 +609,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="TillegsprisListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute("TillegsprisListe", Order = 33)]
+    [System.Xml.Serialization.XmlElement("TillegsprisListe", Order = 33)]
     public tillegsprisType[] TillegsprisListe
     {
         get => tillegsprisListeField;
@@ -619,7 +619,7 @@ public class Hold
     /// <summary>
     /// Gets or sets the <see cref="SkolefagPaHoldListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute("SkolefagPaHoldListe", Order = 34)]
+    [System.Xml.Serialization.XmlElement("SkolefagPaHoldListe", Order = 34)]
     public skolefagPaHoldType[] SkolefagPaHoldListe
     {
         get => skolefagPaHoldListeField;

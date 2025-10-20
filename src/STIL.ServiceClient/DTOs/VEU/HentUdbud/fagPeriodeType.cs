@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The fag periode type class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class fagPeriodeType
 {
     /// <summary>
@@ -59,7 +59,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets the <see cref="StartDato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 0)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 0)]
     public DateTime StartDato
     {
         get => startDatoField;
@@ -69,7 +69,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets the <see cref="SlutDato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 1)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 1)]
     public DateTime SlutDato
     {
         get => slutDatoField;
@@ -79,7 +79,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets the <see cref="VarighedDage"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public decimal VarighedDage
     {
         get => varighedDageField;
@@ -89,7 +89,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="VarighedDageSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool VarighedDageSpecified
     {
         get => varighedDageFieldSpecified;
@@ -99,7 +99,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets the <see cref="ForegarUndervisningPaVirk"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public enumJN ForegarUndervisningPaVirk
     {
         get => foregarUndervisningPaVirkField;
@@ -109,7 +109,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="ForegarUndervisningPaVirkSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool ForegarUndervisningPaVirkSpecified
     {
         get => foregarUndervisningPaVirkFieldSpecified;
@@ -119,7 +119,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets the <see cref="Fjernundervisning"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public enumJN Fjernundervisning
     {
         get => fjernundervisningField;
@@ -129,7 +129,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="FjernundervisningSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool FjernundervisningSpecified
     {
         get => fjernundervisningFieldSpecified;
@@ -139,7 +139,7 @@ public class fagPeriodeType
     /// <summary>
     /// Gets or sets the <see cref="Lokation"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+    [System.Xml.Serialization.XmlElement(Order = 5)]
     public lokationType Lokation
     {
         get => lokationField;

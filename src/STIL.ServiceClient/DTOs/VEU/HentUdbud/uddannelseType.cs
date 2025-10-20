@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The uddannelse type class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class uddannelseType
 {
     /// <summary>
@@ -39,7 +39,7 @@ public class uddannelseType
     /// <summary>
     /// Gets or sets the <see cref="COSAformal"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string COSAformal
     {
         get => cOSAformalField;
@@ -49,7 +49,7 @@ public class uddannelseType
     /// <summary>
     /// Gets or sets the <see cref="Version"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string Version
     {
         get => versionField;
@@ -59,7 +59,7 @@ public class uddannelseType
     /// <summary>
     /// Gets or sets the <see cref="Betegnelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string Betegnelse
     {
         get => betegnelseField;
@@ -69,7 +69,7 @@ public class uddannelseType
     /// <summary>
     /// Gets or sets the <see cref="Uddannelsestype"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public UddannelsestypeType Uddannelsestype
     {
         get => uddannelsestypeField;
@@ -79,7 +79,7 @@ public class uddannelseType
     /// <summary>
     /// Gets or sets a value indicating whether the <see cref="UddannelsestypeSpecified"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool UddannelsestypeSpecified
     {
         get => uddannelsestypeFieldSpecified;

@@ -3,20 +3,20 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
     /// <summary>
     /// HentOptagedePladserRequest.
     /// </summary>
-    [System.Diagnostics.DebuggerStepThroughAttribute]
+    [System.Diagnostics.DebuggerStepThrough]
     [System.Xml.Serialization.XmlRoot(ElementName = "HentOptagedePladserRequest", Namespace = "http://ipl.stil.dk/services/veu/hentoptagedepladser/v1")]
     public class HentOptagedePladserRequest
     {
         /// <summary>
         /// Identifier.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        [System.Xml.Serialization.XmlElement(Order = 0)]
         public Identifier Identifier;
 
         /// <summary>
         /// Message.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        [System.Xml.Serialization.XmlElement(Order = 1)]
         public HentOptagedePladserRequestMessage Message;
 
         /// <summary>

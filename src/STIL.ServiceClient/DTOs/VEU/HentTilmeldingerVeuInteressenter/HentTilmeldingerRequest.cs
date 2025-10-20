@@ -5,9 +5,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The hent tilmeldinger request class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
 [XmlType(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/henttilmeldingerveuinteressenter/v1.0")]
 [XmlRoot(Namespace = "http://ipl.stil.dk/services/veu/henttilmeldingerveuinteressenter/v1.0")]
 public class HentTilmeldingerRequest

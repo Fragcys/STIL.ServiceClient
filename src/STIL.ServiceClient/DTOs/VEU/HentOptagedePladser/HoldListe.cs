@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
     /// <summary>
     /// HoldListe.
     /// </summary>
-    [System.SerializableAttribute]
-    [System.Diagnostics.DebuggerStepThroughAttribute]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentoptagedepladser")]
+    [System.Serializable]
+    [System.Diagnostics.DebuggerStepThrough]
+    [System.ComponentModel.DesignerCategory("code")]
+    [System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentoptagedepladser")]
     public class HoldListe
     {
         /// <summary>
@@ -27,7 +27,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="AktiGUID"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        [System.Xml.Serialization.XmlElement(Order = 0)]
         public string AktiGUID
         {
             get => aktiGUIDField;
@@ -37,7 +37,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="HoldPladsListe"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("HoldPladsListe", Order = 1)]
+        [System.Xml.Serialization.XmlElement("HoldPladsListe", Order = 1)]
         public HoldPladsType[] HoldPladsListe
         {
             get => holdPladsListeField;
@@ -47,7 +47,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="SkolefagPaHoldType"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("SkolefagPaHoldListe", Order = 2)]
+        [System.Xml.Serialization.XmlElement("SkolefagPaHoldListe", Order = 2)]
         public SkolefagPaHoldType[] SkolefagPaHoldListe
         {
             get => skolefagPaHoldListeField;

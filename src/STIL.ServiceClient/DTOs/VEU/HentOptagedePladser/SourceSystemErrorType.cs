@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
     /// <summary>
     /// SourceSystemErrorType.
     /// </summary>
-    [System.SerializableAttribute]
-    [System.Diagnostics.DebuggerStepThroughAttribute]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://ipl.stil.dk/services/veu/hentoptagedepladser/v1")]
+    [System.Serializable]
+    [System.Diagnostics.DebuggerStepThrough]
+    [System.ComponentModel.DesignerCategory("code")]
+    [System.Xml.Serialization.XmlType(Namespace = "http://ipl.stil.dk/services/veu/hentoptagedepladser/v1")]
     public class SourceSystemErrorType
     {
         /// <summary>
@@ -27,7 +27,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="SourceSystemName"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        [System.Xml.Serialization.XmlElement(Order = 0)]
         public string SourceSystemName
         {
             get => sourceSystemNameField;
@@ -37,7 +37,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="ErrorCode"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        [System.Xml.Serialization.XmlElement(Order = 1)]
         public string ErrorCode
         {
             get => errorCodeField;
@@ -47,7 +47,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="Details"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+        [System.Xml.Serialization.XmlElement(Order = 2)]
         public string Details
         {
             get => detailsField;

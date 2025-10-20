@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The skole fag pa hold udliciteret til class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class skoleFagPaHoldUdliciteretTil
 {
     /// <summary>
@@ -24,7 +24,7 @@ public class skoleFagPaHoldUdliciteretTil
     /// <summary>
     /// Gets or sets the <see cref="CVRnr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string CVRnr
     {
         get => cVRnrField;
@@ -34,7 +34,7 @@ public class skoleFagPaHoldUdliciteretTil
     /// <summary>
     /// Gets or sets the <see cref="Pnummer"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string Pnummer
     {
         get => pnummerField;

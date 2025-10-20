@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The hent tilmeldinger req indhold class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger")]
 public class hentTilmeldingerReqIndhold
 {
     /// <summary>
@@ -47,7 +47,7 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets the <see cref="CVRnr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string CVRnr
     {
         get => cVRnrField;
@@ -57,8 +57,8 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets the <see cref="CPRnummerListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlArrayAttribute(Order = 1)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("CPRnummer", IsNullable = false)]
+    [System.Xml.Serialization.XmlArray(Order = 1)]
+    [System.Xml.Serialization.XmlArrayItem("CPRnummer", IsNullable = false)]
     public string[] CPRnummerListe
     {
         get => cPRnummerListeField;
@@ -68,7 +68,7 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets the <see cref="FraDato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 2)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 2)]
     public System.DateTime FraDato
     {
         get => fraDatoField;
@@ -78,7 +78,7 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="FraDatoSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool FraDatoSpecified
     {
         get => fraDatoFieldSpecified;
@@ -88,7 +88,7 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets the <see cref="TilDato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 3)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 3)]
     public System.DateTime TilDato
     {
         get => tilDatoField;
@@ -98,7 +98,7 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="TilDatoSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool TilDatoSpecified
     {
         get => tilDatoFieldSpecified;
@@ -108,7 +108,7 @@ public class hentTilmeldingerReqIndhold
     /// <summary>
     /// Gets or sets the <see cref="InstNr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public string InstNr
     {
         get => instNrField;

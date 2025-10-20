@@ -1,9 +1,11 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
+
 using STIL.ServiceClient.DTOs.VEU.HentOptagedePladser;
 using STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 using STIL.ServiceClient.DTOs.VEU.HentUdbud;
+
 using ServiceFaultDetailer = STIL.ServiceClient.DTOs.VEU.HentOptagedePladser.ServiceFaultDetailer;
 
 namespace STIL.ServiceClient;

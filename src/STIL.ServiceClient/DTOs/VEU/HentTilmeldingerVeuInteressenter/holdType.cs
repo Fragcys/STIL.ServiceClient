@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The hold type class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilmelding")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilmelding")]
 public class holdType
 {
     /// <summary>
@@ -27,7 +27,7 @@ public class holdType
     /// <summary>
     /// Gets or sets the <see cref="Betegnelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string Betegnelse
     {
         get => betegnelseField;
@@ -37,7 +37,7 @@ public class holdType
     /// <summary>
     /// Gets or sets the <see cref="Kviknummer"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string Kviknummer
     {
         get => kviknummerField;
@@ -47,7 +47,7 @@ public class holdType
     /// <summary>
     /// Gets or sets the <see cref="Uddannelsestype"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string Uddannelsestype
     {
         get => uddannelsestypeField;

@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The hent tilmeldinger response class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName = "hentTilmeldingerResponse", Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(TypeName = "hentTilmeldingerResponse", Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger")]
 public class hentTilmeldingerResponse1
 {
     /// <summary>
@@ -22,7 +22,7 @@ public class hentTilmeldingerResponse1
     /// <summary>
     /// Gets or sets the <see cref="wsSyncResModtagerV2"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public wsSyncResModtagerV2 wsSyncResModtagerV2
     {
         get => wsSyncResModtagerV2Field;
@@ -32,7 +32,7 @@ public class hentTilmeldingerResponse1
     /// <summary>
     /// Gets or sets the <see cref="Resultat"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public wsHentTilmeldingerResponse Resultat
     {
         get => resultatField;

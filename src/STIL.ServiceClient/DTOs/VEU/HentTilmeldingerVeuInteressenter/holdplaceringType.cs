@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The holdplacering type class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilmelding")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilmelding")]
 public class holdplaceringType
 {
     /// <summary>
@@ -42,7 +42,7 @@ public class holdplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Startdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 0)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 0)]
     public System.DateTime Startdato
     {
         get => startdatoField;
@@ -52,7 +52,7 @@ public class holdplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Slutdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 1)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 1)]
     public System.DateTime Slutdato
     {
         get => slutdatoField;
@@ -62,7 +62,7 @@ public class holdplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Tilmeldingstype"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string Tilmeldingstype
     {
         get => tilmeldingstypeField;
@@ -72,7 +72,7 @@ public class holdplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Deltagerpris"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public decimal Deltagerpris
     {
         get => deltagerprisField;
@@ -82,7 +82,7 @@ public class holdplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="DeltagerprisSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool DeltagerprisSpecified
     {
         get => deltagerprisFieldSpecified;
@@ -92,8 +92,8 @@ public class holdplaceringType
     /// <summary>
     /// Gets or sets the <see cref="SkolefagHoldplaceringListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlArrayAttribute(Order = 4)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("SkolefagHoldplacering", Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/skolefagHoldplacering", IsNullable = false)]
+    [System.Xml.Serialization.XmlArray(Order = 4)]
+    [System.Xml.Serialization.XmlArrayItem("SkolefagHoldplacering", Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/skolefagHoldplacering", IsNullable = false)]
     public skolefagHoldplaceringType[] SkolefagHoldplaceringListe
     {
         get => skolefagHoldplaceringListeField;

@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The skolefag holdplacering type class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/skolefagHoldplacering")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/skolefagHoldplacering")]
 public class skolefagHoldplaceringType
 {
     /// <summary>
@@ -92,7 +92,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Skolefag"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public skolefagType Skolefag
     {
         get => skolefagField;
@@ -102,7 +102,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Startdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 1)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 1)]
     public System.DateTime Startdato
     {
         get => startdatoField;
@@ -112,7 +112,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Slutdato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 2)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 2)]
     public System.DateTime Slutdato
     {
         get => slutdatoField;
@@ -122,7 +122,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="SlutdatoSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool SlutdatoSpecified
     {
         get => slutdatoFieldSpecified;
@@ -132,7 +132,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Gennemfort"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public string Gennemfort
     {
         get => gennemfortField;
@@ -142,7 +142,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Fjernundervisning"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public enumJN Fjernundervisning
     {
         get => fjernundervisningField;
@@ -152,7 +152,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="FjernundervisningSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool FjernundervisningSpecified
     {
         get => fjernundervisningFieldSpecified;
@@ -162,7 +162,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="ForegarUndervisningPaaVirk"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+    [System.Xml.Serialization.XmlElement(Order = 5)]
     public enumJN ForegarUndervisningPaaVirk
     {
         get => foregarUndervisningPaaVirkField;
@@ -172,7 +172,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="ForegarUndervisningPaaVirkSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool ForegarUndervisningPaaVirkSpecified
     {
         get => foregarUndervisningPaaVirkFieldSpecified;
@@ -182,7 +182,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="Certifikatkursus"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 6)]
+    [System.Xml.Serialization.XmlElement(Order = 6)]
     public enumJN Certifikatkursus
     {
         get => certifikatkursusField;
@@ -192,7 +192,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="CertifikatkursusSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool CertifikatkursusSpecified
     {
         get => certifikatkursusFieldSpecified;
@@ -202,7 +202,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="VarighedDage"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 7)]
+    [System.Xml.Serialization.XmlElement(Order = 7)]
     public decimal VarighedDage
     {
         get => varighedDageField;
@@ -212,7 +212,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="VarighedDageSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool VarighedDageSpecified
     {
         get => varighedDageFieldSpecified;
@@ -222,7 +222,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="NormeretVarighed"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 8)]
+    [System.Xml.Serialization.XmlElement(Order = 8)]
     public decimal NormeretVarighed
     {
         get => normeretVarighedField;
@@ -232,7 +232,7 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="NormeretVarighedSpecified"/> value is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool NormeretVarighedSpecified
     {
         get => normeretVarighedFieldSpecified;
@@ -242,8 +242,8 @@ public class skolefagHoldplaceringType
     /// <summary>
     /// Gets or sets the <see cref="TilstededagListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlArrayAttribute(Order = 9)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("Tilstededag", Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilstededag", IsNullable = false)]
+    [System.Xml.Serialization.XmlArray(Order = 9)]
+    [System.Xml.Serialization.XmlArrayItem("Tilstededag", Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilstededag", IsNullable = false)]
     public tilstededagType[] TilstededagListe
     {
         get => tilstededagListeField;

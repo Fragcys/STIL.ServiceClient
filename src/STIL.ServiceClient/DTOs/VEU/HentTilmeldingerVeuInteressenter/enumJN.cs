@@ -3,8 +3,8 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The enum jn enum.
 /// </summary>
-[System.SerializableAttribute]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/common")]
+[System.Serializable]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/common")]
 public enum enumJN
 {
     /// <summary>

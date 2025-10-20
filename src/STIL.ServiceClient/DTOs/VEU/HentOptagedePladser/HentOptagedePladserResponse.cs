@@ -3,7 +3,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
     /// <summary>
     /// HentOptagedePladserResponse.
     /// </summary>
-    [System.SerializableAttribute]
+    [System.Serializable]
     [System.Xml.Serialization.XmlRoot(ElementName = "HentOptagedePladserResponse", Namespace = "http://ipl.stil.dk/services/veu/hentoptagedepladser/v1")]
     public class HentOptagedePladserResponse
     {

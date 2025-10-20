@@ -6,7 +6,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The enum jn enum.
 /// </summary>
 [Serializable]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/commontypes")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/commontypes")]
 public enum enumJN
 {
     /// <summary>

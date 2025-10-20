@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The hent tilmeldinger res resultat class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger")]
 public class hentTilmeldingerResResultat
 {
     /// <summary>
@@ -32,7 +32,7 @@ public class hentTilmeldingerResResultat
     /// <summary>
     /// Gets or sets the <see cref="InstNr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string InstNr
     {
         get => instNrField;
@@ -42,7 +42,7 @@ public class hentTilmeldingerResResultat
     /// <summary>
     /// Gets or sets the <see cref="SvarKode"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string SvarKode
     {
         get => svarKodeField;
@@ -52,7 +52,7 @@ public class hentTilmeldingerResResultat
     /// <summary>
     /// Gets or sets the <see cref="SvarTekst"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string SvarTekst
     {
         get => svarTekstField;
@@ -62,8 +62,8 @@ public class hentTilmeldingerResResultat
     /// <summary>
     /// Gets or sets the <see cref="PersonListe"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlArrayAttribute(Order = 3)]
-    [System.Xml.Serialization.XmlArrayItemAttribute("Person", IsNullable = false)]
+    [System.Xml.Serialization.XmlArray(Order = 3)]
+    [System.Xml.Serialization.XmlArrayItem("Person", IsNullable = false)]
     public personType[] PersonListe
     {
         get => personListeField;

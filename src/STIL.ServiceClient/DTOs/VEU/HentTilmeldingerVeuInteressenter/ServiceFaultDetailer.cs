@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The service fault detailer class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/henttilmeldingerveuinteressenter/v1.0")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/henttilmeldingerveuinteressenter/v1.0")]
 public class ServiceFaultDetailer
 {
     /// <summary>
@@ -42,7 +42,7 @@ public class ServiceFaultDetailer
     /// <summary>
     /// Gets or sets the <see cref="CorrelationID"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string CorrelationID
     {
         get => correlationIDField;
@@ -52,7 +52,7 @@ public class ServiceFaultDetailer
     /// <summary>
     /// Gets or sets the <see cref="Timestamp"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public System.DateTime Timestamp
     {
         get => timestampField;
@@ -62,7 +62,7 @@ public class ServiceFaultDetailer
     /// <summary>
     /// Gets or sets the <see cref="ErrorCode"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string ErrorCode
     {
         get => errorCodeField;
@@ -72,7 +72,7 @@ public class ServiceFaultDetailer
     /// <summary>
     /// Gets or sets the <see cref="ErrorMessage"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public string ErrorMessage
     {
         get => errorMessageField;
@@ -82,7 +82,7 @@ public class ServiceFaultDetailer
     /// <summary>
     /// Gets or sets the <see cref="Details"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public string Details
     {
         get => detailsField;
@@ -92,7 +92,7 @@ public class ServiceFaultDetailer
     /// <summary>
     /// Gets or sets the <see cref="SourceSystemError"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+    [System.Xml.Serialization.XmlElement(Order = 5)]
     public SourceSystemErrorType SourceSystemError
     {
         get => sourceSystemErrorField;

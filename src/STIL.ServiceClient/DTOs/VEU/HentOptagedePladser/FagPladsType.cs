@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
     /// <summary>
     /// FagPladsType.
     /// </summary>
-    [System.SerializableAttribute]
-    [System.Diagnostics.DebuggerStepThroughAttribute]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentoptagedepladser")]
+    [System.Serializable]
+    [System.Diagnostics.DebuggerStepThrough]
+    [System.ComponentModel.DesignerCategory("code")]
+    [System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentoptagedepladser")]
     public class FagPladsType
     {
         /// <summary>
@@ -22,7 +22,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="Dato"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 0)]
+        [System.Xml.Serialization.XmlElement(DataType = "date", Order = 0)]
         public System.DateTime Dato
         {
             get => datoField;
@@ -32,7 +32,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="OptagetAntalPladser"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+        [System.Xml.Serialization.XmlElement(Order = 1)]
         public decimal OptagetAntalPladser
         {
             get => optagetAntalPladserField;

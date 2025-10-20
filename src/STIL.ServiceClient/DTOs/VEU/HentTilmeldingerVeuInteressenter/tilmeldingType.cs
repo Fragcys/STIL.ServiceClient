@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The tilmelding type class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilmelding")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilmelding")]
 public class tilmeldingType
 {
     /// <summary>
@@ -42,7 +42,7 @@ public class tilmeldingType
     /// <summary>
     /// Gets or sets the <see cref="HoplGUID"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string HoplGUID
     {
         get => hoplGUIDField;
@@ -52,7 +52,7 @@ public class tilmeldingType
     /// <summary>
     /// Gets or sets the <see cref="PersonoplysningerTilmelding"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public personoplysningerTilmeldingType PersonoplysningerTilmelding
     {
         get => personoplysningerTilmeldingField;
@@ -62,7 +62,7 @@ public class tilmeldingType
     /// <summary>
     /// Gets or sets the <see cref="Arbejdsgiver"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public arbejdsgiverType Arbejdsgiver
     {
         get => arbejdsgiverField;
@@ -72,7 +72,7 @@ public class tilmeldingType
     /// <summary>
     /// Gets or sets the <see cref="Skole"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public skoleType Skole
     {
         get => skoleField;
@@ -82,7 +82,7 @@ public class tilmeldingType
     /// <summary>
     /// Gets or sets the <see cref="Hold"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public holdType Hold
     {
         get => holdField;
@@ -92,7 +92,7 @@ public class tilmeldingType
     /// <summary>
     /// Gets or sets the <see cref="Holdplacering"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 5)]
+    [System.Xml.Serialization.XmlElement(Order = 5)]
     public holdplaceringType Holdplacering
     {
         get => holdplaceringField;

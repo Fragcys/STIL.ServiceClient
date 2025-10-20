@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The hent udbud response message class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/hentudbud/v1.0")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/hentudbud/v1.0")]
 public class HentUdbudResponseMessage
 {
     /// <summary>
@@ -19,7 +19,7 @@ public class HentUdbudResponseMessage
     /// <summary>
     /// Gets or sets the <see cref="HentUdbudResponse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud", Order = 0)]
+    [System.Xml.Serialization.XmlElement(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud", Order = 0)]
     public HentUdbudResponse1 HentUdbudResponse
     {
         get => hentUdbudResponseField;

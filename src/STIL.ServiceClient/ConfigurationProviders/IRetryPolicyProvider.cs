@@ -1,5 +1,6 @@
-﻿using Polly.Retry;
-using System.Net.Http;
+﻿using System.Net.Http;
+
+using Polly.Retry;
 
 namespace STIL.ServiceClient.ConfigurationProviders
 {

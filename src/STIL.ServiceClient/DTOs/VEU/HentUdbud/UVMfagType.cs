@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The uv mfag type class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class UVMfagType
 {
     /// <summary>
@@ -29,7 +29,7 @@ public class UVMfagType
     /// <summary>
     /// Gets or sets the <see cref="UVMfagKode"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string UVMfagKode
     {
         get => uVMfagKodeField;
@@ -39,7 +39,7 @@ public class UVMfagType
     /// <summary>
     /// Gets or sets the <see cref="Niveau"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string Niveau
     {
         get => niveauField;
@@ -49,7 +49,7 @@ public class UVMfagType
     /// <summary>
     /// Gets or sets the <see cref="Betegnelse"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string Betegnelse
     {
         get => betegnelseField;

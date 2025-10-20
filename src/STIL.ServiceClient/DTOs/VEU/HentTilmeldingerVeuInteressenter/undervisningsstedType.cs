@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The undervisningssted type class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilstededag")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilstededag")]
 public class undervisningsstedType
 {
     /// <summary>
@@ -37,7 +37,7 @@ public class undervisningsstedType
     /// <summary>
     /// Gets or sets the <see cref="Navn"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string Navn
     {
         get => navnField;
@@ -47,7 +47,7 @@ public class undervisningsstedType
     /// <summary>
     /// Gets or sets the <see cref="Gade"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string Gade
     {
         get => gadeField;
@@ -57,7 +57,7 @@ public class undervisningsstedType
     /// <summary>
     /// Gets or sets the <see cref="Sted"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string Sted
     {
         get => stedField;
@@ -67,7 +67,7 @@ public class undervisningsstedType
     /// <summary>
     /// Gets or sets the <see cref="Postnummer"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public string Postnummer
     {
         get => postnummerField;
@@ -77,7 +77,7 @@ public class undervisningsstedType
     /// <summary>
     /// Gets or sets the <see cref="Postdistrikt"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public string Postdistrikt
     {
         get => postdistriktField;

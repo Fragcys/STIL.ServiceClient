@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The hent udbud response class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/hentudbud/v1.0")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/hentudbud/v1.0")]
 public class HentUdbudResponse
 {
     /// <summary>
@@ -29,7 +29,7 @@ public class HentUdbudResponse
     /// <summary>
     /// Gets or sets the <see cref="Identifier"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public Identifier Identifier
     {
         get => identifierField;
@@ -39,7 +39,7 @@ public class HentUdbudResponse
     /// <summary>
     /// Gets or sets the <see cref="CorrelationID"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string CorrelationID
     {
         get => correlationIDField;
@@ -49,7 +49,7 @@ public class HentUdbudResponse
     /// <summary>
     /// Gets or sets the <see cref="Message"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public HentUdbudResponseMessage Message
     {
         get => messageField;

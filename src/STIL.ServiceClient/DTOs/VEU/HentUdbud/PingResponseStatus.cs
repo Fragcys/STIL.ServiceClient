@@ -6,7 +6,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The ping response status enum.
 /// </summary>
 [Serializable]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/hentudbud/v1.0")]
+[System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://ipl.stil.dk/services/veu/hentudbud/v1.0")]
 public enum PingResponseStatus
 {
     /// <summary>

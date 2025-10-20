@@ -7,9 +7,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// </summary>
 /// <seealso cref="RequestType"/>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class HentUdbudRequest1 : RequestType
 {
     /// <summary>
@@ -20,7 +20,7 @@ public class HentUdbudRequest1 : RequestType
     /// <summary>
     /// Gets or sets the <see cref="Indhold"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public IndholdRequestType Indhold
     {
         get => indholdField;

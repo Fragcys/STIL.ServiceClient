@@ -6,7 +6,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The undervisningsform type enum.
 /// </summary>
 [Serializable]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public enum UndervisningsformType
 {
     /// <summary>
@@ -32,6 +32,6 @@ public enum UndervisningsformType
     /// <summary>
     /// The påfremmedsprog undervisningsform type.
     /// </summary>
-    [System.Xml.Serialization.XmlEnumAttribute("På fremmedsprog")]
+    [System.Xml.Serialization.XmlEnum("På fremmedsprog")]
     Påfremmedsprog,
 }

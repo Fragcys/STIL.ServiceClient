@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
     /// <summary>
     /// HentOptagedePladserResponse1.
     /// </summary>
-    [System.SerializableAttribute]
-    [System.Diagnostics.DebuggerStepThroughAttribute]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentoptagedepladser")]
+    [System.Serializable]
+    [System.Diagnostics.DebuggerStepThrough]
+    [System.ComponentModel.DesignerCategory("code")]
+    [System.Xml.Serialization.XmlType(AnonymousType = true, Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentoptagedepladser")]
     public class HentOptagedePladserResponse1 : ResponseType
     {
         /// <summary>
@@ -22,7 +22,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="Behandlingstidspunkt"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+        [System.Xml.Serialization.XmlElement(Order = 0)]
         public System.DateTime Behandlingstidspunkt
         {
             get => behandlingstidspunktField;
@@ -32,7 +32,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentOptagedePladser
         /// <summary>
         /// Gets or sets the <see cref="HoldListe"/> value.
         /// </summary>
-        [System.Xml.Serialization.XmlElementAttribute("HoldListe", Order = 1)]
+        [System.Xml.Serialization.XmlElement("HoldListe", Order = 1)]
         public HoldListe[] HoldListe
         {
             get => holdListeField;

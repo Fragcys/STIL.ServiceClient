@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The tilstededag type class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilstededag")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/henttilmeldinger/tilstededag")]
 public class tilstededagType
 {
     /// <summary>
@@ -42,7 +42,7 @@ public class tilstededagType
     /// <summary>
     /// Gets or sets the <see cref="Dato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 0)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 0)]
     public System.DateTime Dato
     {
         get => datoField;
@@ -52,7 +52,7 @@ public class tilstededagType
     /// <summary>
     /// Gets or sets the <see cref="NormTimer"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public decimal NormTimer
     {
         get => normTimerField;
@@ -62,7 +62,7 @@ public class tilstededagType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="NormTimerSpecified"/> is set..
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool NormTimerSpecified
     {
         get => normTimerFieldSpecified;
@@ -72,7 +72,7 @@ public class tilstededagType
     /// <summary>
     /// Gets or sets the <see cref="TimerTilstede"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public decimal TimerTilstede
     {
         get => timerTilstedeField;
@@ -82,7 +82,7 @@ public class tilstededagType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="TimerTilstedeSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool TimerTilstedeSpecified
     {
         get => timerTilstedeFieldSpecified;
@@ -92,7 +92,7 @@ public class tilstededagType
     /// <summary>
     /// Gets or sets the <see cref="Undervisningssted"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public undervisningsstedType Undervisningssted
     {
         get => undervisningsstedField;

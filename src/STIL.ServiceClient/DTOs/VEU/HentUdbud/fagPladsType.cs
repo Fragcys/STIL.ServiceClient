@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The fag plads type class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class fagPladsType
 {
     /// <summary>
@@ -29,7 +29,7 @@ public class fagPladsType
     /// <summary>
     /// Gets or sets the <see cref="Dato"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(DataType = "date", Order = 0)]
+    [System.Xml.Serialization.XmlElement(DataType = "date", Order = 0)]
     public DateTime Dato
     {
         get => datoField;
@@ -39,7 +39,7 @@ public class fagPladsType
     /// <summary>
     /// Gets or sets the <see cref="AntalPladser"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public decimal AntalPladser
     {
         get => antalPladserField;
@@ -49,7 +49,7 @@ public class fagPladsType
     /// <summary>
     /// Gets or sets a value indicating whether <see cref="AntalPladserSpecified"/> is set.
     /// </summary>
-    [System.Xml.Serialization.XmlIgnoreAttribute]
+    [System.Xml.Serialization.XmlIgnore]
     public bool AntalPladserSpecified
     {
         get => antalPladserFieldSpecified;

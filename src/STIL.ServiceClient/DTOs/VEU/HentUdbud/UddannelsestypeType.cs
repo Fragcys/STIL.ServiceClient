@@ -6,7 +6,7 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The uddannelsestype type enum.
 /// </summary>
 [Serializable]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public enum UddannelsestypeType
 {
     /// <summary>

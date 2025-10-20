@@ -6,9 +6,9 @@ namespace STIL.ServiceClient.DTOs.VEU.HentUdbud;
 /// The opdatering class.
 /// </summary>
 [Serializable]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/hentudbud/webservice/hentudbud")]
 public class Opdatering
 {
     /// <summary>
@@ -39,7 +39,7 @@ public class Opdatering
     /// <summary>
     /// Gets or sets the <see cref="Loebenummer"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public long Loebenummer
     {
         get => loebenummerField;
@@ -49,7 +49,7 @@ public class Opdatering
     /// <summary>
     /// Gets or sets the <see cref="AktiGuid"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string AktiGuid
     {
         get => aktiGuidField;
@@ -59,7 +59,7 @@ public class Opdatering
     /// <summary>
     /// Gets or sets the <see cref="InstNr"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 2)]
+    [System.Xml.Serialization.XmlElement(Order = 2)]
     public string InstNr
     {
         get => instNrField;
@@ -69,7 +69,7 @@ public class Opdatering
     /// <summary>
     /// Gets or sets the <see cref="Handling"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 3)]
+    [System.Xml.Serialization.XmlElement(Order = 3)]
     public HandlingType Handling
     {
         get => handlingField;
@@ -79,7 +79,7 @@ public class Opdatering
     /// <summary>
     /// Gets or sets the <see cref="Hold"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 4)]
+    [System.Xml.Serialization.XmlElement(Order = 4)]
     public Hold Hold
     {
         get => holdField;

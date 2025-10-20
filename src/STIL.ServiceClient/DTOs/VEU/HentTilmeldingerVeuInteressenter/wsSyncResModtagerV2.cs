@@ -3,10 +3,10 @@ namespace STIL.ServiceClient.DTOs.VEU.HentTilmeldingerVeuInteressenter;
 /// <summary>
 /// The ws sync res modtager class.
 /// </summary>
-[System.SerializableAttribute]
-[System.Diagnostics.DebuggerStepThroughAttribute]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/common")]
+[System.Serializable]
+[System.Diagnostics.DebuggerStepThrough]
+[System.ComponentModel.DesignerCategory("code")]
+[System.Xml.Serialization.XmlType(Namespace = "http://www.veu.stil.dk/tilmelding/ws/syncskole/common")]
 public class wsSyncResModtagerV2
 {
     /// <summary>
@@ -22,7 +22,7 @@ public class wsSyncResModtagerV2
     /// <summary>
     /// Gets or sets the <see cref="ModtagerSystemID"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 0)]
+    [System.Xml.Serialization.XmlElement(Order = 0)]
     public string ModtagerSystemID
     {
         get => modtagerSystemIDField;
@@ -32,7 +32,7 @@ public class wsSyncResModtagerV2
     /// <summary>
     /// Gets or sets the <see cref="ModtagerSystemTransaktionsID"/> value.
     /// </summary>
-    [System.Xml.Serialization.XmlElementAttribute(Order = 1)]
+    [System.Xml.Serialization.XmlElement(Order = 1)]
     public string ModtagerSystemTransaktionsID
     {
         get => modtagerSystemTransaktionsIDField;
